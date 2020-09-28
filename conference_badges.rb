@@ -20,9 +20,9 @@ end
 
 def printer(speakers)
   batch_badge_creator(speakers).each do |output|
-    p output
+    return output
   end
   assign_rooms(speakers).each do |assign|
-    p assign
+    return assign
   end 
 end
